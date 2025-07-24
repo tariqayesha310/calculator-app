@@ -1,0 +1,161 @@
+/* Color Variables */
+:root {
+  --color-hero-bg: #1f1f2e;
+  --color-about-bg: #2a2a3a;
+  --color-projects-bg: #3a3a4a;
+  --color-skills-bg: #2a2a3a;
+  --color-contact-bg: #3a3a4a;
+  --color-primary: #6c63ff;
+  --color-accent: #ff6584;
+  --color-text: #fff; /* white text */
+  --color-muted: #bbbbbb;
+  --color-footer-bg: #111827;
+}
+
+/* Background Themes */
+.bg-hero {
+  background-color: var(--color-hero-bg);
+  color: var(--color-text);
+}
+
+.bg-about {
+  background-color: var(--color-about-bg);
+  color: var(--color-text);
+}
+
+.bg-projects {
+  background-color: var(--color-projects-bg);
+  color: var(--color-text);
+}
+
+.bg-skills {
+  background-color: var(--color-skills-bg);
+  color: var(--color-text);
+}
+
+.bg-contact {
+  background-color: var(--color-contact-bg);
+  color: var(--color-text);
+}
+
+.bg-footer {
+  background-color: var(--color-footer-bg);
+  color: var(--color-text);
+}
+
+/* Card Styling */
+.card {
+  background: #252536;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--color-text);
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.8);
+}
+
+/* Gradient Card */
+.card-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-accent)
+  );
+  color: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.6);
+  transition: transform 0.3s ease;
+}
+.card-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 30px rgba(255, 101, 132, 0.8);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(108, 99, 255, 0.7);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #574fd6;
+  box-shadow: 0 6px 12px rgba(87, 79, 214, 0.9);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-primary);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Section Divider */
+.section-divider {
+  height: 4px;
+  width: 60px;
+  margin: 1.5rem auto;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+/* Background Patterns */
+.bg-stripes {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(108, 99, 255, 0.15),
+    rgba(108, 99, 255, 0.15) 10px,
+    rgba(255, 101, 132, 0.15) 10px,
+    rgba(255, 101, 132, 0.15) 20px
+  );
+}
+
+/* Text Highlight Gradient */
+.text-highlight {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Glow Effects */
+.glow-primary {
+  box-shadow: 0 0 12px 3px rgba(108, 99, 255, 0.7);
+}
+
+.glow-accent {
+  box-shadow: 0 0 15px 5px rgba(255, 101, 132, 0.8);
+}
+
+/* Fade in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease forwards;
+}

@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font and body setup */
+body {
+  font-family: "Inter", sans-serif;
+  color: #fff; /* White text */
+  background-color: #1f1f2e; /* dark navy background */
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 4rem;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  color: #fff; /* White headings */
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Links */
+a {
+  transition: all 0.3s ease;
+  color: #6c63ff; /* violet-blue accent */
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+
+/* Section padding */
+section {
+  padding: 6rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 8rem 3rem;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #2a2a3a;
+}
